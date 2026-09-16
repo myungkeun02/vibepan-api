@@ -1,8 +1,8 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { oauthEnabled, authorizationUrl, exchangeOAuth, type Provider } from './oauth';
 import { id, sign, verified, cookieOpts, safeReturn, login } from './security';
 import { one, settingEnabled } from './db';
-export async function handleOAuth(ctx: APIContext, provider: Provider, callback: boolean) {
+export async function handleOAuth(ctx: RequestContext, provider: Provider, callback: boolean) {
   if (!oauthEnabled(provider))
     return new Response('소셜 로그인은 준비 중이에요. 로그인 화면에서 이메일로 로그인해 주세요.', {
       status: 503,

@@ -9,3 +9,5 @@ data/test
 test-results
 playwright-report
 docs/qa/screenshots
+
+.build/

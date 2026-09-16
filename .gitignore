@@ -32,3 +32,5 @@ docs/qa/playwright-results.json
 .env.local
 .data/
 .coverage/
+
+.build/

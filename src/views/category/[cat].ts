@@ -1,11 +1,11 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../../http/context';
 import { categories } from '../../lib/apps';
 import { catalog } from '../../lib/catalog';
 import { absolute } from '../../lib/config';
-export async function load(Astro: APIContext & { response: { status: number } }) {
-  const cat = categories.find((c) => c.slug === Astro.params.cat);
-  if (!cat) Astro.response.status = 404;
-  const params = new URLSearchParams(Astro.url.searchParams);
+export async function load(ctx: RequestContext & { response: { status: number } }) {
+  const cat = categories.find((c) => c.slug === ctx.params.cat);
+  if (!cat) ctx.response.status = 404;
+  const params = new URLSearchParams(ctx.url.searchParams);
   if (cat) params.set('category', cat.slug);
   const list = cat ? (await catalog(params)).items : [];
   const jsonld = cat

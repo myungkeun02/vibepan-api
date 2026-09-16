@@ -1,10 +1,10 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { all, postSelect } from '../lib/db';
 import { editStatuses } from '../lib/service-schema';
 import { getApp } from '../lib/apps';
-export async function load(Astro: APIContext & { response: { status: number } }) {
-  const user = Astro.locals.user;
-  if (!user) return Astro.redirect('/login?returnTo=/me');
+export async function load(ctx: RequestContext & { response: { status: number } }) {
+  const user = ctx.locals.user;
+  if (!user) return ctx.redirect('/login?returnTo=/me');
   const mine = await all(
     postSelect + " WHERE p.user_id=? AND p.status='active' ORDER BY p.created_at DESC",
     user.id,

@@ -1,9 +1,9 @@
-import type { APIRoute } from 'astro';
+import type { RequestHandler } from '../http/context';
 import { categories } from '../lib/apps';
 import { all } from '../lib/db';
 import { publicServiceRows, serviceHref } from '../lib/services';
 import { absolute } from '../lib/config';
-export const GET: APIRoute = async () => {
+export const GET: RequestHandler = async () => {
   const urls = [
     '/',
     '/community',

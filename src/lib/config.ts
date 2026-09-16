@@ -8,7 +8,7 @@ if (!process.env.SESSION_SECRET && !existsSync(localSecret))
   writeFileSync(localSecret, randomBytes(48).toString('hex'), { mode: 0o600 });
 export const production = process.env.APP_ENV === 'production';
 export const secret = process.env.SESSION_SECRET || readFileSync(localSecret, 'utf8');
-export const siteUrl = (process.env.SITE_URL || 'http://localhost:8095').replace(/\/$/, '');
+export const siteUrl = (process.env.SITE_URL || 'http://localhost:4310').replace(/\/$/, '');
 if (
   production &&
   (!process.env.SESSION_SECRET ||

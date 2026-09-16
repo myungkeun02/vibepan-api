@@ -1,23 +1,23 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { related, categoryName, priceLabel } from '../lib/apps';
 import { verdicts, absolute, boards } from '../lib/config';
 import { one, voteCounts, posts } from '../lib/db';
 import { serviceBySlug } from '../lib/services';
 import { catalogApp } from '../lib/catalog';
-export async function load(Astro: APIContext & { response: { status: number } }) {
-  const service = await serviceBySlug(Astro.params.slug || '', Astro.locals.user);
+export async function load(ctx: RequestContext & { response: { status: number } }) {
+  const service = await serviceBySlug(ctx.params.slug || '', ctx.locals.user);
   const a = service ? catalogApp(service) : null;
   if (!a) {
-    Astro.response.status = 404;
+    ctx.response.status = 404;
   }
   const v = a ? verdicts[a.verdict] : null;
-  const user = Astro.locals.user;
+  const user = ctx.locals.user;
   const voted = a
     ? Boolean(
         await one(
           'SELECT id FROM votes WHERE slug=? AND ' + (user ? 'user_id=?' : 'anonymous=?'),
           a.slug,
-          user?.id || Astro.locals.anon,
+          user?.id || ctx.locals.anon,
         ),
       )
     : false;

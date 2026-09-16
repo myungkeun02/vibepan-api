@@ -1,9 +1,19 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "strict": true,
     "allowJs": true,
-    "resolveJsonModule": true
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["node"]
   },
-  "exclude": ["dist", "node_modules", "reference", "playwright-report", "test-results", "data", "public"],
-  "include": [".astro/types.d.ts", "src/**/*", "scripts/**/*.ts", "test/**/*.ts", "*.ts"]
+  "include": ["src/**/*", "test/**/*.ts", "scripts/**/*.ts", "*.ts"],
+  "exclude": ["node_modules", "dist", ".build", "data", "test-results", "playwright-report"]
 }

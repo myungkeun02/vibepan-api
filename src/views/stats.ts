@@ -1,9 +1,9 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { totals, posts } from '../lib/db';
 import { categories } from '../lib/apps';
 import { catalog } from '../lib/catalog';
 import { publicServices } from '../lib/services';
-export async function load(Astro: APIContext & { response: { status: number } }) {
+export async function load(ctx: RequestContext & { response: { status: number } }) {
   const t = await totals();
   const recentBuilds = (await posts(new URLSearchParams({ board: 'builds' }))).items.slice(0, 3);
   const services = await publicServices(new URLSearchParams(), 3);
