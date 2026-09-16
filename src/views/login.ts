@@ -1,8 +1,8 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { safeReturn } from '../lib/security';
-export async function load(Astro: APIContext & { response: { status: number } }) {
-  const returnTo = safeReturn(Astro.url.searchParams.get('returnTo'));
-  if (Astro.locals.user) return Astro.redirect(returnTo);
+export async function load(ctx: RequestContext & { response: { status: number } }) {
+  const returnTo = safeReturn(ctx.url.searchParams.get('returnTo'));
+  if (ctx.locals.user) return ctx.redirect(returnTo);
   const providers = [
     ['github', 'GitHub'],
     ['google', 'Google'],

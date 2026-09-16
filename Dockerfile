@@ -19,4 +19,4 @@ RUN mkdir -p /data && chown -R node:node /data /app/data
 USER node
 ENV HOST=0.0.0.0 PORT=4311 NODE_ENV=production APP_ENV=production DATA_DIR=/data
 EXPOSE 4311
-CMD ["node","dist/server/entry.mjs"]
+CMD ["node","dist/main.mjs"]

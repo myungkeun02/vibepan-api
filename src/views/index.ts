@@ -1,11 +1,11 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { categories } from '../lib/apps';
 import { catalog } from '../lib/catalog';
 import { absolute, boards } from '../lib/config';
 import { posts } from '../lib/db';
-export async function load(Astro: APIContext & { response: { status: number } }) {
+export async function load(ctx: RequestContext & { response: { status: number } }) {
   const recent = (await posts(new URLSearchParams({ board: 'builds' }))).items.slice(0, 3);
-  const r = await catalog(Astro.url.searchParams);
+  const r = await catalog(ctx.url.searchParams);
   const jsonld = [
     {
       '@context': 'https://schema.org',

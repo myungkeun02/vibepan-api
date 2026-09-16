@@ -2,7 +2,7 @@ import { randomBytes, createHmac, createHash, scrypt as scryptCallback, timingSa
 import { promisify } from 'node:util';
 import { secret, production } from './config';
 import { one, run, mergeVotes } from './db';
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 const scrypt = promisify(scryptCallback);
 export const id = () => randomBytes(18).toString('hex');
 export const hash = (x: string) => createHash('sha256').update(x).digest('hex');
@@ -28,7 +28,7 @@ export async function passwordCheck(password: string, stored?: string | null) {
   const target = Buffer.from(digest, 'hex');
   return target.length === key.length && timingSafeEqual(key, target);
 }
-export async function identity(ctx: APIContext) {
+export async function identity(ctx: RequestContext) {
   let anon = verified(ctx.cookies.get('anon')?.value);
   if (!anon) {
     anon = id();
@@ -50,7 +50,7 @@ export async function identity(ctx: APIContext) {
       )
     : null;
 }
-export async function login(ctx: APIContext, user: string) {
+export async function login(ctx: RequestContext, user: string) {
   const old = ctx.cookies.get('session')?.value;
   if (old) await run('DELETE FROM sessions WHERE token=?', hash(old));
   const token = id() + id();

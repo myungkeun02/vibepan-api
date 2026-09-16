@@ -3,7 +3,7 @@ import { test, expect, vi, beforeAll, afterAll, afterEach } from 'vitest';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../../src/http/context';
 
 const dir = mkdtempSync(join(tmpdir(), 'vibecoding-oauth-'));
 vi.stubEnv('DATA_DIR', dir);
@@ -13,8 +13,8 @@ for (const provider of ['GITHUB', 'GOOGLE']) {
   vi.stubEnv(provider + '_CLIENT_ID', 'test-client');
   vi.stubEnv(provider + '_CLIENT_SECRET', 'test-secret');
 }
-let auth: typeof import('../../src/pages/auth/[...path]');
-let callback: typeof import('../../src/pages/api/auth/callback/[provider]');
+let auth: typeof import('../../src/handlers/auth/[...path]');
+let callback: typeof import('../../src/handlers/api/auth/callback/[provider]');
 let security: typeof import('../../src/lib/security');
 let db: typeof import('../../src/lib/db');
 let testDatabase: Awaited<ReturnType<typeof createTestDatabase>>;
@@ -22,8 +22,8 @@ beforeAll(async () => {
   testDatabase = await createTestDatabase('unit');
   process.env.DATABASE_URL = testDatabase.connectionString;
   process.env.DATABASE_SCHEMA = testDatabase.schema;
-  auth = await import('../../src/pages/auth/[...path]');
-  callback = await import('../../src/pages/api/auth/callback/[provider]');
+  auth = await import('../../src/handlers/auth/[...path]');
+  callback = await import('../../src/handlers/api/auth/callback/[provider]');
   security = await import('../../src/lib/security');
   db = await import('../../src/lib/db');
 });
@@ -49,7 +49,7 @@ function context(path: string, jar = new Map<string, string>()) {
       delete: (key: string) => jar.delete(key),
     },
     redirect: (location: string) => new Response(null, { status: 302, headers: { Location: location } }),
-  } as unknown as APIContext;
+  } as unknown as RequestContext;
 }
 
 test.each(['github', 'google'])(

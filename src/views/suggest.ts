@@ -1,8 +1,7 @@
-import type { APIContext } from 'astro';
+import type { RequestContext } from '../http/context';
 import { apps } from '../lib/apps';
-export async function load(Astro: APIContext & { response: { status: number } }) {
-  const user = Astro.locals.user;
-  if (!user)
-    return Astro.redirect('/login?returnTo=' + encodeURIComponent(Astro.url.pathname + Astro.url.search));
+export async function load(ctx: RequestContext & { response: { status: number } }) {
+  const user = ctx.locals.user;
+  if (!user) return ctx.redirect('/login?returnTo=' + encodeURIComponent(ctx.url.pathname + ctx.url.search));
   return {};
 }

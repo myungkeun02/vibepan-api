@@ -1,8 +1,8 @@
-import type { APIRoute } from 'astro';
+import type { RequestHandler } from '../../http/context';
 import { one } from '../../lib/db';
 import { publicServiceWhere } from '../../lib/services';
 import { readImage } from '../../lib/storage';
-export const GET: APIRoute = async (ctx) => {
+export const GET: RequestHandler = async (ctx) => {
   const id = ctx.params.id || '';
   if (!/^[a-f0-9]{36}$/.test(id)) return new Response(null, { status: 404 });
   const file = await one('SELECT * FROM uploads WHERE id=?', id);

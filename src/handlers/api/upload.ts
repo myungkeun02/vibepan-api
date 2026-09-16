@@ -1,11 +1,11 @@
 import { readLimited } from '../../lib/request';
-import type { APIRoute } from 'astro';
+import type { RequestHandler } from '../../http/context';
 import sharp from 'sharp';
 import { id } from '../../lib/security';
 import { saveImage } from '../../lib/storage';
 import { run, rate } from '../../lib/db';
 import { siteUrl } from '../../lib/config';
-export const POST: APIRoute = async (ctx) => {
+export const POST: RequestHandler = async (ctx) => {
   try {
     if (!ctx.locals.user) return Response.json({ error: '로그인 후 이용해 주세요.' }, { status: 401 });
     if (

@@ -1,5 +1,5 @@
 import { readLimited } from '../../lib/request';
-import type { APIRoute } from 'astro';
+import type { RequestHandler } from '../../http/context';
 import { z } from 'zod';
 import { transaction, run, one, rate, event, vote, totals, getPost, settingEnabled } from '../../lib/db';
 import {
@@ -44,7 +44,7 @@ const postSchema = z.object({
   url: z.string().max(1000).default(''),
   repo: z.string().max(1000).default(''),
 });
-export const POST: APIRoute = async (ctx) => {
+export const POST: RequestHandler = async (ctx) => {
   const action = ctx.params.action || '';
   const isJson = ctx.request.headers.get('Content-Type')?.includes('application/json');
   try {
@@ -603,7 +603,7 @@ export const POST: APIRoute = async (ctx) => {
     return Response.json({ ok: false, error: message }, { status });
   }
 };
-export const GET: APIRoute = async (ctx) =>
+export const GET: RequestHandler = async (ctx) =>
   ctx.params.action === 'health'
     ? Response.json({ ok: (await one('SELECT 1 AS ready'))?.ready === 1 })
     : ctx.params.action === 'totals'

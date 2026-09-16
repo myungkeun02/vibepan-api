@@ -12,3 +12,8 @@ for (const file of files) {
     throw new Error('Private administrator implementation in service repository: ' + file);
 }
 console.log('Repository and browser boundaries verified.');
+
+for (const file of files) {
+  if (/\.(?:ts|mjs)$/.test(file) && /from ['"]astro|astro:/.test(readFileSync(file, 'utf8')))
+    throw new Error('Legacy runtime import: ' + file);
+}
