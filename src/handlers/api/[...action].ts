@@ -504,13 +504,13 @@ export const POST: RequestHandler = async (ctx) => {
         case 'services/edits/cancel': {
           requireUser();
           await cancelServiceEdit(b.id, user.id);
-          result.redirect = '/me#my-service-edits';
+          result.redirect = '/me?tab=suggestions#my-activity';
           break;
         }
         case 'services/delete': {
           requireUser();
           await deleteService(b.id, user.id, b.revision);
-          result.redirect = '/me#my-services';
+          result.redirect = '/me?tab=services#my-activity';
           break;
         }
         case 'suggest': {
