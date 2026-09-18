@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 16657,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Plus",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 12,
+    "annualMonthlyNative": 10,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.notion.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.notion.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "무료 플랜 제공. Plus의 멤버 1명 기준이며, 연간 결제 시 1명당 연 120달러예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "개인 프로젝트의 문서와 할 일을 정리하고, 같은 자료를 표나 보드로 보는 도구는 만들어볼 만해요. 여러 사람이 동시에 편집하거나 문서별 권한을 세밀하게 나누고 기존 수식·연동 기능을 그대로 쓰려면 노션이 더 적합해요.",
@@ -115,6 +119,18 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.notion.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
+    },
+    {
+      "url": "https://www.notion.com/en-gb/releases/2024-06-26",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

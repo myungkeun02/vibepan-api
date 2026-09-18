@@ -1,9 +1,10 @@
 {
-  "amount": 1,
+  "amount": 1.0,
   "base": "USD",
-  "date": "2026-09-07",
+  "date": "2026-09-18",
   "rates": {
-    "KRW": 1347.93
+    "EUR": 0.8726,
+    "KRW": 1388.1
   },
-  "source": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=KRW"
+  "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW,EUR"
 }

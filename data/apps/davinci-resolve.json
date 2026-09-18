@@ -25,19 +25,19 @@
   "priceMonthly": null,
   "pricing": {
     "model": "one-time",
-    "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "currency": "KRW",
+    "plan": "DaVinci Resolve Studio 21",
     "perSeat": false,
     "minimumSeats": 1,
     "billing": "one-time",
     "monthlyNative": null,
     "annualMonthlyNative": null,
-    "oneTimeNative": null,
+    "oneTimeNative": 509800,
     "source": {
-      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.blackmagicdesign.com/kr/products/davinciresolve",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "일반 DaVinci Resolve는 무료예요. Studio의 한국 공식 일회 구매 가격이며, 하드웨어 상품 가격은 포함하지 않아요."
     },
     "exchange": null
   },
@@ -115,6 +115,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.blackmagicdesign.com/kr/products/davinciresolve",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

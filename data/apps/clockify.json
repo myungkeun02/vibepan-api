@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 6927,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Basic",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 4.99,
+    "annualMonthlyNative": 3.99,
     "oneTimeNative": null,
     "source": {
-      "url": "https://clockify.me/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://clockify.me/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "무료 플랜은 최대 5명. Basic은 소유자·관리자를 포함한 활성 및 초대된 사용자 좌석마다 과금돼요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "yes",
   "verdictReason": "팀의 프로젝트별 작업 시간 기록과 집계에 필요한 기능은 직접 만들어볼 만해요. 다만 자동 추적, 고급 승인, 청구 시스템 연동 등은 이 제작 범위에 포함되지 않아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://clockify.me/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

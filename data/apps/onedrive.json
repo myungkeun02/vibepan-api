@@ -25,22 +25,22 @@
     "Web",
     "Desktop"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 2900,
   "pricing": {
     "model": "freemium",
-    "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "currency": "KRW",
+    "plan": "Microsoft 365 Basic (100GB)",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 2900,
+    "annualMonthlyNative": 2491.6666666666665,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/onedrive-plans-and-pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "1인용 Microsoft 365 Basic의 100GB 요금이에요. 연간 결제는 29,900원이며, 데스크톱 Office 앱 구독은 포함하지 않아요."
     },
     "exchange": null
   },
@@ -118,6 +118,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/onedrive-plans-and-pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

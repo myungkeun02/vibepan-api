@@ -22,7 +22,7 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": 11794,
+  "priceMonthly": 12146,
   "pricing": {
     "model": "subscription",
     "currency": "USD",
@@ -40,9 +40,9 @@
       "note": "사용자 1명 기준이에요. 세금과 한시적인 할인은 제외했어요."
     },
     "exchange": {
-      "rate": 1347.93,
-      "date": "2026-09-07",
-      "source": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=KRW"
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
     }
   },
   "verdict": "kinda",

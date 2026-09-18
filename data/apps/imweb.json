@@ -22,22 +22,22 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 16000,
   "pricing": {
     "model": "subscription",
     "currency": "KRW",
-    "plan": "요금제 확인 필요",
+    "plan": "Starter",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 16000,
     "annualMonthlyNative": null,
     "oneTimeNative": null,
     "source": {
-      "url": "https://imweb.me/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.imweb.me/price",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "사이트 1개의 1개월 이용료예요. 신규 구독 할인은 제외했으며, 도메인·결제대행 등 부가 서비스 비용은 별도예요."
     },
     "exchange": null
   },
@@ -115,6 +115,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.imweb.me/price",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

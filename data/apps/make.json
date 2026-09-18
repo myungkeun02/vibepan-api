@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 12493,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "plan": "Core · 월 10,000 크레딧",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 9,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.make.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.make.com/en/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "연간 결제 기준 시작 가격이에요. 작업 단계·AI 기능에 따라 크레딧이 차감돼요. 무료 플랜은 월 1,000크레딧까지예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "정해 둔 API를 순서대로 실행하는 자동화에 필요한 기능은 직접 만들어볼 만해요. 다만 외부 서비스 연동 기능의 유지·보수, 복잡한 작업 흐름의 시각적 편집·실행, 안정적인 작업 실행 환경 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -115,6 +119,18 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.make.com/en/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
+    },
+    {
+      "url": "https://www.make.com/en/blog/best-automated-workflow-tools-for-scaling-manual-processes",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

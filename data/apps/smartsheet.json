@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 16657,
   "pricing": {
     "model": "subscription",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Pro",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 12,
+    "annualMonthlyNative": 9,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.smartsheet.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.smartsheet.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "Pro는 멤버 1~10명 기준. Business의 최소 3명 조건과 혼동하지 않도록 Pro 가격을 표시했어요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "프로젝트 일정표와 간단한 승인 상태 관리에 필요한 기능은 직접 만들어볼 만해요. 다만 많은 프로젝트의 통합 관리, 자동화 연동, 기업 권한 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.smartsheet.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true
