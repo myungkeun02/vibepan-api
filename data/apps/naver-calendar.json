@@ -22,7 +22,7 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 0,
   "pricing": {
     "model": "free",
     "currency": "KRW",

@@ -24,24 +24,28 @@
   "platforms": [
     "Desktop"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 8329,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Pro",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 6,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.usebruno.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.usebruno.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "오픈소스 기본 버전은 무료예요. 현재 Pro 사용자 1명당 연간 결제 가격이며, 과거 일회성 라이선스 가격과 구분했어요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "yes",
   "verdictReason": "파일로 저장하는 API 요청 모음과 응답 검사에 필요한 기능은 직접 만들어볼 만해요. 다만 원본 Bru 형식 호환, 고급 인증, 화면 조작의 편의성 등은 이 제작 범위에 포함되지 않아요.",
@@ -117,6 +121,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.usebruno.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

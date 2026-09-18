@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 9717,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Google Workspace Business Starter",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 7,
     "oneTimeNative": null,
     "source": {
-      "url": "https://workspace.google.com/products/chat/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://workspace.google.com/pricing.html",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "개인 Google 계정의 기본 Chat은 무료예요. 조직 관리 기능을 포함한 Workspace Starter의 연간 약정 정상가이며, 첫 가입 할인과 세금은 제외했어요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "팀별 대화 공간의 공지와 업무 대화 관리에 필요한 기능은 직접 만들어볼 만해요. 다만 Workspace 통합 검색, 봇 연결, 모바일 알림 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://workspace.google.com/pricing.html",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

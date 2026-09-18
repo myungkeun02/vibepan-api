@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 54136,
   "pricing": {
     "model": "subscription",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "plan": "Basic",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 39,
+    "annualMonthlyNative": 28,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.typeform.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.typeform.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "1명·월 응답 100개를 포함한 Basic 기준. 연간 결제는 월 환산 28달러이며, 응답 수를 늘리면 비용이 달라져요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "yes",
   "verdictReason": "한 번에 한 질문씩 보여주는 고객 설문에 필요한 기능은 직접 만들어볼 만해요. 다만 기존 연동 앱, 고급 분석, 서비스에서 제공하는 스팸 차단 등은 이 제작 범위에 포함되지 않아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.typeform.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

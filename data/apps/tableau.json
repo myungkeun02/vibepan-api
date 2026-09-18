@@ -24,24 +24,28 @@
     "Web",
     "Desktop"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 104108,
   "pricing": {
     "model": "subscription",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Tableau Cloud Standard · Creator",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 75,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.tableau.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.tableau.com/pricing/cloud",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "시각화를 만드는 Creator 라이선스 기준이에요. 연간 계약이며 배포마다 최소 1명의 Creator가 필요해요. 열람 전용 Viewer 요금과 달라요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "no",
   "verdictReason": "CSV 데이터의 필터와 시각화 대시보드에 쓰는 보조 도구부터 만들어볼 수 있어요. 하지만 다양한 방식의 시각적 데이터 분석, 공간 데이터 분석, 기업 데이터 연결 등 핵심 기능을 그대로 재현하기는 어려워요. 기존 도구를 보조하는 용도로 접근해 보세요.",
@@ -117,6 +121,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.tableau.com/pricing/cloud",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

@@ -23,22 +23,22 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 1650,
   "pricing": {
     "model": "freemium",
-    "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "currency": "KRW",
+    "plan": "80GB",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 1650,
+    "annualMonthlyNative": 1375,
     "oneTimeNative": null,
     "source": {
-      "url": "https://mybox.naver.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://mybox.naver.com/about/product?tab=mybox",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "기본 무료 30GB에 50GB를 추가하는 상품이에요. 연간 결제는 16,500원이며, 네이버 웹 가격표 기준이에요."
     },
     "exchange": null
   },
@@ -116,6 +116,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://mybox.naver.com/about/product?tab=mybox",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

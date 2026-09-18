@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 13881,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "plan": "Basic",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 10,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.framer.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.framer.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "사이트 1개·연간 결제 기준. 무료 제작 플랜도 있으며 추가 편집자·다국어 기능에는 별도 요금이 붙어요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "개인 포트폴리오의 화면과 프로젝트 소개 관리에 필요한 기능은 직접 만들어볼 만해요. 다만 시각 편집기, 고급 애니메이션, 서비스에서 제공하는 웹사이트 운영 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.framer.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

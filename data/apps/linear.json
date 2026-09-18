@@ -22,7 +22,7 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": 13479,
+  "priceMonthly": 13881,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
@@ -40,9 +40,9 @@
       "note": "1년치 요금을 12개월로 나눈 금액이에요. 매달 결제할 때의 요금은 확인하지 못했어요."
     },
     "exchange": {
-      "rate": 1347.93,
-      "date": "2026-09-07",
-      "source": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=KRW"
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
     }
   },
   "verdict": "kinda",

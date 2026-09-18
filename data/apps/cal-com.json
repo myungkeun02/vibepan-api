@@ -24,24 +24,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 16657,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Teams",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 12,
     "oneTimeNative": null,
     "source": {
-      "url": "https://cal.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://cal.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "개인용 무료 플랜 제공. Teams의 사용자 1명당 연간 결제 기준이며, 조직용 기능은 상위 요금제예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "yes",
   "verdictReason": "개인이 정한 시간대의 미팅 예약 관리에 필요한 기능은 직접 만들어볼 만해요. 다만 회의 서비스 연동, 유료 미팅 예약, 기업용 SSO 등은 이 제작 범위에 포함되지 않아요.",
@@ -117,6 +121,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://cal.com/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

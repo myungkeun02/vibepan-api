@@ -40,7 +40,11 @@
       "checkedOn": "2026-09-08",
       "note": "한 번 결제하는 평생 이용권 기준이에요. 월 1.99달러 구독도 있으며, 지역에 따라 세금이 달라요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "yes",
   "verdictReason": "개인 메모의 노트북 분류와 고정·검색에 필요한 기능은 직접 만들어볼 만해요. 다만 서로 다른 운영체제 간 동기화, 운영체제에 맞춘 단축키, 원본 파일 호환 등은 이 제작 범위에 포함되지 않아요.",

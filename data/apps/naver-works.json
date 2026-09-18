@@ -22,22 +22,22 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 4000,
   "pricing": {
     "model": "subscription",
-    "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "currency": "KRW",
+    "plan": "코어 Lite",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 4000,
+    "annualMonthlyNative": 3000,
     "oneTimeNative": null,
     "source": {
-      "url": "https://naver.worksmobile.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://naver.worksmobile.com/pricing/",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "무료 플랜 제공. 메신저 중심 코어 Lite의 구성원 1명 기준이며, 메일·드라이브는 상위 요금제에서 제공해요. 부가세 별도."
     },
     "exchange": null
   },
@@ -115,6 +115,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://naver.worksmobile.com/pricing/",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

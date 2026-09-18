@@ -23,24 +23,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 12493,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Data Studio Pro",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
+    "billing": "monthly",
+    "monthlyNative": 9,
     "annualMonthlyNative": null,
     "oneTimeNative": null,
     "source": {
-      "url": "https://cloud.google.com/looker-studio",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://cloud.google.com/data-studio",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "일반 Data Studio는 무료예요. Pro는 사용자·프로젝트마다 월 9달러이며, 연결하는 외부 데이터 서비스의 요금은 별도예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "업로드한 데이터로 공유용 보고서 작성에 필요한 기능은 직접 만들어볼 만해요. 다만 외부 데이터를 실시간으로 가져오기, 조직 권한, 대규모 보고서 성능 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -122,6 +126,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "제품명 변경 공식 발표 확인. 기존 주소명 유지."
+    },
+    {
+      "url": "https://cloud.google.com/data-studio",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

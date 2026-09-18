@@ -23,22 +23,22 @@
   "platforms": [
     "Desktop"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 30800,
   "pricing": {
     "model": "subscription",
-    "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "currency": "KRW",
+    "plan": "Premiere 개인 단일 앱",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual-monthly",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 30800,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.adobe.com/products/premiere.html",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.adobe.com/kr/products/premiere/plans.html",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "부가세 포함·1년 약정 후 매월 청구되는 가격이에요. 약정 없는 월간 구독과 다르며, 중도 해지 조건이 적용될 수 있어요. 학생 할인·첫해 할인은 제외했어요."
     },
     "exchange": null
   },
@@ -116,6 +116,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.adobe.com/kr/products/premiere/plans.html",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

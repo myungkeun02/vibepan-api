@@ -22,24 +22,28 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 54136,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
+    "plan": "Advantage Annual",
     "perSeat": false,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 39,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.surveymonkey.com/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.surveymonkey.com/pricing/individual/",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "1명 사용·연 468달러 결제 기준. 월 결제 상품인 Standard Monthly는 기능과 가격이 달라 별도 상품으로 봐야 해요. 응답 초과 요금은 별도예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "kinda",
   "verdictReason": "기본 설문의 응답 수집과 문항별 결과 확인에 필요한 기능은 직접 만들어볼 만해요. 다만 설문 응답자를 모집하는 서비스, 고급 통계 검증, 다른 설문 결과와의 비교 자료 등은 빠져요. 이 기능을 자주 쓴다면 기존 도구를 함께 쓰는 편이 나아요.",
@@ -115,6 +119,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.surveymonkey.com/pricing/individual/",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

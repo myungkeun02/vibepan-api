@@ -25,24 +25,28 @@
     "Web",
     "Desktop"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 19433,
   "pricing": {
     "model": "freemium",
     "currency": "USD",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
+    "plan": "Power BI Pro",
+    "perSeat": true,
     "minimumSeats": 1,
-    "billing": "unknown",
+    "billing": "annual",
     "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "annualMonthlyNative": 14,
     "oneTimeNative": null,
     "source": {
-      "url": "https://www.microsoft.com/power-platform/products/power-bi",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "무료 계정 제공. 보고서 공유·게시용 Pro 사용자 1명의 미국 연간 결제 기준이며, Fabric 용량 요금은 별도예요."
     },
-    "exchange": null
+    "exchange": {
+      "rate": 1388.1,
+      "date": "2026-09-18",
+      "source": "https://api.frankfurter.app/2026-09-18?from=USD&to=KRW"
+    }
   },
   "verdict": "no",
   "verdictReason": "매출 CSV의 기간·제품별 조회 대시보드에 쓰는 보조 도구부터 만들어볼 수 있어요. 하지만 DAX 수식 계산, 기업용 시스템 연결, 대규모 데이터 모델 등 핵심 기능을 그대로 재현하기는 어려워요. 기존 도구를 보조하는 용도로 접근해 보세요.",
@@ -118,6 +122,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true

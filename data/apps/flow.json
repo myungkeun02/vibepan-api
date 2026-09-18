@@ -22,22 +22,22 @@
   "platforms": [
     "Web"
   ],
-  "priceMonthly": null,
+  "priceMonthly": 10000,
   "pricing": {
     "model": "subscription",
     "currency": "KRW",
-    "plan": "요금제 확인 필요",
-    "perSeat": false,
-    "minimumSeats": 1,
-    "billing": "unknown",
-    "monthlyNative": null,
-    "annualMonthlyNative": null,
+    "plan": "Business",
+    "perSeat": true,
+    "minimumSeats": 10,
+    "billing": "monthly",
+    "monthlyNative": 10000,
+    "annualMonthlyNative": 8000,
     "oneTimeNative": null,
     "source": {
-      "url": "https://flow.team/",
-      "checkedOn": "2026-09-08",
-      "status": "unverified",
-      "note": "요금제와 실제 결제액을 확인하지 못해 월 비용 합계에 포함하지 않았어요."
+      "url": "https://secure.flow.team/kr/price",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "최소 10명부터 결제하며 부가세 별도예요. 10명 기준 월간 결제는 월 100,000원, 연간 결제는 연 960,000원이에요."
     },
     "exchange": null
   },
@@ -115,6 +115,12 @@
       "checkedOn": "2026-09-08",
       "status": "verified",
       "note": "공식 제품 페이지의 이름과 제공 기능 확인. 대체 범위·판정은 별도 편집 의견."
+    },
+    {
+      "url": "https://secure.flow.team/kr/price",
+      "checkedOn": "2026-09-19",
+      "status": "verified",
+      "note": "요금제와 결제 조건을 확인한 공식 안내예요."
     }
   ],
   "published": true
